@@ -5,7 +5,7 @@ import "./ProposBannerResponsive.scss";
 const ProposBanner = () => {
   return (
     <div className="ProposBanner">
-        <img src="./images/propos_background.png" alt="propos_background"/>
+        <img src={process.env.PUBLIC_URL + "/images/propos_background.png"} alt="propos_background"/>
         {/* <div className="BannerHomeText">Chez vous, partout et ailleurs</div>                 */}
     </div>
   )

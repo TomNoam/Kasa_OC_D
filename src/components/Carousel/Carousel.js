@@ -55,8 +55,8 @@ export default function Carousel() {
             return (       
                 <div className="mainCarousel">
                     <div className="arrowsContainer">
-                        <img className="arrow" onClick={goToPrevious} src="../../../images/arrowLEFT.png" alt="arrowLEFT" />                     
-                        <img className="arrow" onClick={goToNext} src="../../../images/arrowRIGHT.png" alt="arrowRIGHT" /> 
+                        <img className="arrow" onClick={goToPrevious} src={process.env.PUBLIC_URL + "/images/arrowLEFT.png"} alt="arrowLEFT" />                     
+                        <img className="arrow" onClick={goToNext} src={process.env.PUBLIC_URL + "/images/arrowRIGHT.png"} alt="arrowRIGHT" /> 
                     </div>
                     <div className="carouselIndex">
                         <div className="currentPicture"> {currentIndex + 1} </div>

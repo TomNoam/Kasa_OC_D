@@ -6,7 +6,7 @@ export default function Footer() {
     return (
             <footer>
                 <div className="footerContainer">        
-                    <img src="/images/LOGO_white.png" alt="footer_logo"/>
+                    <img src={process.env.PUBLIC_URL + "/images/LOGO_white.png"} alt="footer_logo"/>
                     <div className="kasaRights">© 2020 Kasa. All rights reserved</div>
                 </div>
             </footer>

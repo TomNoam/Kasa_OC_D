@@ -13,8 +13,8 @@ export default function Acordion(props) {
                     <div className='item'>
                         <div className='titleBlock' onClick={() => setIsOpen(!isOpen)}>
                             <h2> {props.name} </h2>
-                            {!isOpen && <img src="../../../images/arrowDOWN.png" alt='arrowUP' className='arrow'/>} 
-                            {isOpen && <img src="../../../images/arrowUP.png" alt='arrowUP' className='arrow'/>}                         
+                            {!isOpen && <img src={process.env.PUBLIC_URL + "/images/arrowDOWN.png"} alt='arrowUP' className='arrow'/>} 
+                            {isOpen && <img src={process.env.PUBLIC_URL + "/images/arrowUP.png"} alt='arrowUP' className='arrow'/>}                         
                         </div>
                         <div className='animation_acordion'>{isOpen && <div className='contentText'>{props.content}</div>}</div>
                     </div>
